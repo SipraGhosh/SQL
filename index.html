@@ -1,0 +1,325 @@
+<html>
+    <title>
+        SQL Hakerrank Question Solution
+    </title>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://fontawesome.com/v4.7/icons/ "></script>
+        <style>
+            body{
+                margin:0%;
+            }
+            .taskber{
+                width:100%;
+                height:100px;
+                background-color: rgb(14, 48, 75);
+                text-indent: 50px;
+                font-family: "Brush Script MT", serif;
+                font-size: 43px;
+                
+                position: relative;
+                /*z-index: 1;*/
+            }
+            .r{
+                width: 30%;
+                margin-left:69%;
+                height:447px;
+                border: 1px ridge rgb(14, 48, 75);
+        
+            }
+            .rr{
+                width: 30%;
+            
+                height:447px;
+                border: 1px ridge rgb(14, 48, 75);
+        
+            }
+            .back{
+                width:100%;
+                height:447px;
+                background-image: url('dbms.png');
+                background-repeat: no-repeat, repeat;
+                background-color: rgb(105, 149, 179);
+                background-position: right bottom, left top;
+            }
+            .body{
+                width:67%;
+                height:520px;
+                float: left;
+                background-image :url('https://hrcdn.net/og/default.jpg');
+                opacity:.9;
+                transition:3s ease-out;
+                position: relative;
+            }
+            .body:hover
+            {
+                background-image :url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQF8Mo7vIO-sx2orsqDzhOuOwm8I6L2ZK1Nm_UIlAtEmuWY_GdHcXZ-E_9uoXRiI9W3xqI&usqp=CAU') ;
+                opacity:1;
+                width:67%;
+                height:520px;
+            }
+            .round{
+                width:100px;
+                height:25px;
+                padding-top: 5px;
+                border-radius: 20px;
+                background-color: rgb(184, 179, 179);
+                margin-top: 5px;
+                float: left;
+                margin-left: 10px;
+            }
+            .round1{
+                width:170px;
+                height:25px;
+                padding-top: 5px;
+                border-radius: 20px;
+                background-color: rgb(184, 179, 179);
+                margin-top: 5px;
+                margin-left: 5px;
+                float: left;
+            }
+            .round2{
+                width:110px;
+                height:25px;
+                padding-top: 5px;
+                border-radius: 20px;
+                background-color: rgb(184, 179, 179);
+                margin-top: 5px;
+                margin-left: 289px;
+            }
+            .sql{
+                width:400px;
+                height:200px;
+                margin-left:879px;
+                padding-top: 45px;
+            }
+            .round3{
+                width:100px;
+                height:25px;
+                padding-top: 5px;
+                border-radius: 20px;
+                background-color: rgb(184, 179, 179);
+                margin-top: 5px;
+                margin-left: 295px;
+            }
+            .round4{
+                width:190px;
+                padding-top: 5px;
+                height:25px;
+                border-radius: 20px;
+                background-color: rgb(184, 179, 179);
+                margin-top: 5px;
+                margin-left: 10px;
+                float: left;
+            }
+            .b{
+                width:100%;
+                height:290px;
+                background-color: black;
+                position: relative;
+            }
+            .c{
+                width:79%;
+                height:150px;
+                background-color: rgb(168, 167, 167);
+                position: relative;
+                padding-left: 280px;
+                padding-top: 130px;
+            }
+            .cc{
+                width:100%;
+                height:200px;
+                background-color:white;
+                position: relative;
+                
+            }
+            .h{
+                width:800px;
+                height:205px;
+                position: absolute; 
+                padding-left: 43px;
+                padding-top: 43px;
+                z-index: 1;
+                font-size: 20;
+                text-align: justify;
+                /*border: white solid;*/
+            }
+            .tt{
+                width:400px;
+                height:60px;
+                position: absolute;
+                z-index: 1;
+                top:25px;
+                left:120px;
+                /*border: white solid;*/
+            }
+            .text{
+                margin-left:65%; 
+                height:20%;
+                width:15%;
+                top: 40px;
+                position: absolute;
+            }
+        </style>
+    </head>
+    <script>
+         function test()
+        {
+            var c=s.search.value;
+            if(c=="")
+             {
+                 alert("enter the email");
+                 s.search.focus();
+                 return false;
+             }
+        }
+
+</script>
+    <body>
+        <div class="taskber"> <img src="https://miro.medium.com/max/2400/1*04oGvilaqzyDwqlhHrF8bA.png" width="130px"; height="105px">
+                <div class="tt"><font color="white"> Hakerrank-SQL</font></div>
+                <div class="text">
+                    <input type="text" class="ax" name="search" placeholder="Search" autofocus pattern="{A-Z a-z}[2,40]" required="required" style=" margin-left:65%; height:100%; width:100%;">
+                </div>
+        </div>
+           
+               &nbsp; &nbsp; &nbsp; <img src="C:\Users\User\Pictures\Saved Pictures\carbon footprint\sql.e.jpg" width="200px" height="100px">
+           
+        <div class="body">
+        </div>
+        <div class="r"><br>
+            <div class="round">&nbsp; &nbsp; <a href=" https://sipraghosh.github.io/Hakerrank-Sql/">Basic Sql</a></div>
+            <div class="round1">&nbsp; &nbsp; <a href="https://sipraghosh.github.io/-Weather-Observation-Station-Hakerrank/">Weather Observation</a></div>
+            <div class="round2"></div>
+            
+            <div class="round1">&nbsp; &nbsp; Higher Than 75</div>
+            <div class="round"></div>
+            <div class="round3"></div>
+
+            <div class="round4">&nbsp; &nbsp; C++ Hello world</div>
+            <div class="round4">&nbsp; &nbsp; Employee names</div>
+
+            <div class="round"></div>
+            <div class="round1">&nbsp; &nbsp; Type of triangle</div>
+            <div class="round2"></div>
+            
+            <div class="round1">&nbsp; &nbsp; Employee salaries</div>
+            <div class="round"></div>
+            <div class="round3"></div>
+
+            <div class="round4">&nbsp; &nbsp; RA-The Count Function</div>
+            <div class="round4">&nbsp; &nbsp; RA-The Sum Function</div>
+
+            <div class="round"></div>
+            <div class="round1">&nbsp; &nbsp; RA-Averages</div>
+            <div class="round2"></div>
+            
+            <div class="round1"></div>
+            <div class="round"></div>
+            <div class="round3"></div>
+
+            <div class="round4">&nbsp; &nbsp; Average Population</div>
+            <div class="round4"></div>
+
+            <div class="round">&nbsp; &nbsp; The PADS</div>
+            <div class="round1">&nbsp; &nbsp; Japan population</div>
+            <div class="round2">&nbsp; &nbsp; African Cities</div>
+            
+            <div class="round1">&nbsp; &nbsp; The Blunder</div>
+            <div class="round">&nbsp; &nbsp; Top Earners</div>
+            <div class="round"></div>
+            <div class="round3">&nbsp; &nbsp; Triangle 2</div>
+
+            <div class="round4">&nbsp; &nbsp; Population Census</div>
+            <div class="round4">&nbsp; &nbsp; Triangle 1</div>
+
+            <div class="round2"></div>
+            <div class="round3">bkjnl</div>
+            
+        </div>
+        <div class="b">
+            <div class="h"><font color="white">HackerRank is a technology hiring platform that is the standard for assessing developer skills
+            for over 2,000+ companies around the world. By enabling tech recruiters and hiring managers to objectively evaluate talent at every
+            stage of the recruiting process,HackerRank helps companies hire skilled developers and innovate faster.<br>
+
+            SQL stands for Structured Query Language. It is designed for managing data in a relational database management system (RDBMS). It is
+             pronounced as S-Q-L or sometime See-Qwell. SQL is a database language, it is used for database creation, deletion, fetching rows, and 
+             modifying rows, etc.
+        </font></div>
+            <img  class="sql" src="https://d2h0cx97tjks2p.cloudfront.net/blogs/wp-content/uploads/sites/2/2018/08/Introduction-to-SQL.jpg"></div>
+  
+        </div>
+        <div class="back">
+            
+            <div class="rr" style="padding-left:170px; border:0px"><br>
+            <div class="round" style="background-color:white;">&nbsp; &nbsp; <a href=" https://sipraghosh.github.io/Hakerrank-Sql/">Basic Sql</a></div>
+            <div class="round1" style="background-color:white;">&nbsp; &nbsp; <a href="https://sipraghosh.github.io/-Weather-Observation-Station-Hakerrank/">Weather Observation</a></div>
+            <div class="round2" style="background-color:white;"></div>
+            
+            <div class="round1" style="background-color:white;">&nbsp; &nbsp; Higher Than 75</div>
+            <div class="round" style="background-color:white;"></div>
+            <div class="round3" style="background-color:white;"></div>
+
+            <div class="round4" style="background-color:white;">&nbsp; &nbsp; C++ Hello world</div>
+            <div class="round4" style="background-color:white;">&nbsp; &nbsp; Employee names</div>
+
+            <div class="round" style="background-color:white;"></div>
+            <div class="round1" style="background-color:white;">&nbsp; &nbsp; Type of triangle</div>
+            <div class="round2" style="background-color:white;"></div>
+            
+            <div class="round1" style="background-color:white;">&nbsp; &nbsp; Employee salaries</div>
+            <div class="round" style="background-color:white;"></div>
+            <div class="round3" style="background-color:white;"></div>
+
+            <div class="round4" style="background-color:white;">&nbsp; &nbsp; RA-The Count Function</div>
+            <div class="round4" style="background-color:white;">&nbsp; &nbsp; RA-The Sum Function</div>
+
+            <div class="round" style="background-color:white;"></div>
+            <div class="round1" style="background-color:white;">&nbsp; &nbsp; RA-Averages</div>
+            <div class="round2" style="background-color:white;"></div>
+            
+            <div class="round1" style="background-color:white;"></div>
+            <div class="round" style="background-color:white;"></div>
+            <div class="round3" style="background-color:white;"></div>
+
+            <div class="round4" style="background-color:white;">&nbsp; &nbsp; Average Population</div>
+            <div class="round4" style="background-color:white;"></div>
+
+            <div class="round" style="background-color:white;">&nbsp; &nbsp; The PADS</div>
+            <div class="round1" style="background-color:white;">&nbsp; &nbsp; Japan population</div>
+            <div class="round2" style="background-color:white;">&nbsp; &nbsp; African Cities</div>
+            
+            <div class="round1" style="background-color:white;">&nbsp; &nbsp; The Blunder</div>
+            <div class="round" style="background-color:white;">&nbsp; &nbsp; Top Earners</div>
+            <div class="round" style="background-color:white;"></div>
+            <div class="round3" style="background-color:white;">&nbsp; &nbsp; Triangle 2</div>
+
+            <div class="round4" style="background-color:white;">&nbsp; &nbsp; Population Census</div>
+            <div class="round4" style="background-color:white;">&nbsp; &nbsp; Triangle 1</div>
+
+            <div class="round2" style="background-color:white;"></div>
+            <div class="round3" style="background-color:white;">bkjnl</div>
+            </div>
+        </div>
+        <div class="cc">
+            <p align="center"><font size="6"><b>Keep in touch</b></font></p><br>
+            <font style="padding-left: 400px;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Please Provide your email to Sign up and keep in touch for more SQL query</font><br>
+            <br><font style="padding-left: 575px;">
+                <form name="s" onsubmit="return test();">
+                    <input type="email" name="search" placeholder="Enter your email" autofocus pattern="{A-Z a-z @}[2,40]" required="required" style=" height:15%; border-radius: 5px; width:15%;"></font>
+                    <br><br><font style="padding-left: 630px;"><input type="submit" placeholder="Sign Up" style=" height:12%; width:7%;"></font>
+                </form>
+            
+        </div>
+        
+        <div class="c">
+             &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <i class="fa fa-facebook-square" aria-hidden="true" style="font-size:50px;color:black;"></i> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <i class="fa fa-instagram" aria-hidden="true" style="font-size:50px;color:black;"></i> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <i class="fa fa-github" aria-hidden="true" style="font-size:50px;color:black;"></i>
+            <br><br><br><br>
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  Terms and conditions &nbsp; &nbsp; &nbsp; &nbsp;      Privacy Policy &nbsp; &nbsp; &nbsp; &nbsp;        Cookie Policy &nbsp; &nbsp; &nbsp; &nbsp;       Complaints &nbsp; &nbsp; &nbsp; &nbsp;     Questions     
+        </div>
+    </body>
+</html>
