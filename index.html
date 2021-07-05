@@ -45,15 +45,22 @@
             .body{
                 width:67%;
                 height:520px;
+                position:relative;
+                display: inline-block;
                 float: left;
-                background-image :url('https://hrcdn.net/og/default.jpg');
                
             }
-            .body:hover
-            {
-                background-image :url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQF8Mo7vIO-sx2orsqDzhOuOwm8I6L2ZK1Nm_UIlAtEmuWY_GdHcXZ-E_9uoXRiI9W3xqI&usqp=CAU');
-               
+            .body .img-top {
+                display: none;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 99;
             }
+            .body:hover .img-top {
+                    display: inline;
+            }
+            
             .round{
                 width:100px;
                 height:25px;
@@ -182,6 +189,8 @@
                &nbsp; &nbsp; &nbsp; <img src="https://intellipaat.com/mediaFiles/2015/11/SQL-e1559106221282.png" width="200px" height="100px">
            
         <div class="body">
+            <img src="https://hrcdn.net/og/default.jpg" alt="body Back">
+            <img src="'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQF8Mo7vIO-sx2orsqDzhOuOwm8I6L2ZK1Nm_UIlAtEmuWY_GdHcXZ-E_9uoXRiI9W3xqI&usqp=CAU" class="img-top" alt="body Front">
         </div>
         <div class="r"><br>
             <div class="round">&nbsp; &nbsp; <a href=" https://sipraghosh.github.io/Hakerrank-Sql/">Basic Sql</a></div>
